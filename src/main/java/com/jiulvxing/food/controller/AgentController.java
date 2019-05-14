@@ -27,7 +27,7 @@ public class AgentController {
 		contactUs.setcNumber(cNumber);
 		contactUs.setcIdea(cIdea);
 	    contactUsService.insertAgent(contactUs);
-		return "success4www";
+		return "success";
 	}
 	
 	
