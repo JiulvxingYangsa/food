@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiulvxing.food.dao.ContactUsMapper">
+
+
+       
+       
+       <insert id="agentInsert">
+         INSERT INTO contact_us(c_name,c_email,c_number,c_idea) VALUES(#{cName,jdbcType=VARCHAR},#{cEmail,jdbcType=VARCHAR},#{cNumber,jdbcType=VARCHAR},#{cIdea,jdbcType=VARCHAR})
+       </insert>
+
+
+    
+
+
+</mapper>
