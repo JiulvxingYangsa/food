@@ -19,7 +19,7 @@ public class AgentController {
 	ContactUsService contactUsService;
 	
 	@RequestMapping("/insertAgent")
-	public Msg insertAgent(@RequestParam("cName")String cName,@RequestParam("cEmail")String cEmail,@RequestParam("cNumber")String cNumber,@RequestParam("cIdea")String cIdea) {
+	public String insertAgent(@RequestParam("cName")String cName,@RequestParam("cEmail")String cEmail,@RequestParam("cNumber")String cNumber,@RequestParam("cIdea")String cIdea) {
 		
 		ContactUs contactUs = new ContactUs();
 		contactUs.setcName(cName);
@@ -27,7 +27,7 @@ public class AgentController {
 		contactUs.setcNumber(cNumber);
 		contactUs.setcIdea(cIdea);
 	    contactUsService.insertAgent(contactUs);
-		return Msg.success();
+		return "success4www";
 	}
 	
 	

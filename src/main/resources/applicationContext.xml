@@ -17,6 +17,7 @@
      
      <!-- 加载数据源的配置文件 -->
      <context:property-placeholder location="classpath:dbconfig.properties"/>
+     
      <bean id="pooledDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
            <property name="jdbcUrl" value="${jdbc.Url}"></property>
 	       <property name="driverClass" value="${jdbc.Driver}"></property>
@@ -59,7 +60,7 @@
 	     <tx:method name="get*" read-only="true"/>
 	  </tx:attributes>
 	</tx:advice>
-	
+<!-- 	<tx:annotation-driven/> -->
 	<!-- spring配置文件的核心点（数据源，与mybatis的整个配置，事物控制的配置） -->
 
 </beans>
