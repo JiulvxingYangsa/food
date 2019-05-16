@@ -6,7 +6,7 @@
        
        
        <insert id="agentInsert" parameterType="com.jiulvxing.food.bean.ContactUs">
-         INSERT INTO contact_us(c_name,c_email,c_number,c_idea) VALUES(#{cName,jdbcType=VARCHAR},#{cEmail,jdbcType=VARCHAR},#{cNumber,jdbcType=VARCHAR},#{cIdea,jdbcType=VARCHAR})
+         INSERT INTO reserve_agent(c_name,c_email,c_number,c_idea) VALUES(#{cName,jdbcType=VARCHAR},#{cEmail,jdbcType=VARCHAR},#{cNumber,jdbcType=VARCHAR},#{cIdea,jdbcType=VARCHAR})
        </insert>
 
 
