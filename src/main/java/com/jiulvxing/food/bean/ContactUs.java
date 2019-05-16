@@ -6,18 +6,20 @@ import org.springframework.stereotype.Component;
 @Component
 public class ContactUs implements Serializable {
  
+private static final long serialVersionUID = 1L;
+	
 	private Integer cId;
 	private String cName;
 	private String cEmail;
 	private String cNumber;
 	private String cIdea;
-	
+	private String cTime;
 	
 	
 	public ContactUs() {
 	
-		
 	}
+
 	public Integer getcId() {
 		return cId;
 	}
@@ -48,20 +50,28 @@ public class ContactUs implements Serializable {
 	public void setcIdea(String cIdea) {
 		this.cIdea = cIdea;
 	}
-	public ContactUs(Integer cId, String cName, String cEmail, String cNumber, String cIdea) {
+	public String getcTime() {
+		return cTime;
+	}
+	public void setcTime(String cTime) {
+		this.cTime = cTime;
+	}
+
+	public ContactUs(Integer cId, String cName, String cEmail, String cNumber, String cIdea, String cTime) {
 		super();
 		this.cId = cId;
 		this.cName = cName;
 		this.cEmail = cEmail;
 		this.cNumber = cNumber;
 		this.cIdea = cIdea;
+		this.cTime = cTime;
 	}
+
 	@Override
 	public String toString() {
-		return "ContactUs [cId=" + cId + ", cName=" + cName + ", cEmail=" + cEmail + ", cNumber=" + cNumber + ", cIdea="
-				+ cIdea + "]";
+		return "reserveAgent [cId=" + cId + ", cName=" + cName + ", cEmail=" + cEmail + ", cNumber=" + cNumber
+				+ ", cIdea=" + cIdea + ", cTime=" + cTime + "]";
 	}
-	
 	
 	
 	
